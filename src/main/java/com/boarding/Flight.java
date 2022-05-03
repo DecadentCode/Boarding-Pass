@@ -1,12 +1,12 @@
 package com.boarding;
 
 import java.time.LocalTime;
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Flight {
 
     // Date, Origin, Destination, Estimated time of arrival (ETA), Departure Time
-    private final Date date = new Date();
+    private LocalDate date;
     private String origin;
     private String destination;
     private LocalTime ETA;
@@ -20,7 +20,8 @@ public class Flight {
 
     // Parameterized constructor
 
-    public Flight(String origin, String destination, LocalTime ETA, LocalTime DT) {
+    public Flight(LocalDate date, String origin, String destination, LocalTime ETA, LocalTime DT) {
+        this.date = date;
         this.origin = origin;
         this.destination = destination;
         this.ETA = ETA;
@@ -28,6 +29,11 @@ public class Flight {
     }
 
     //setters
+
+    public void setDate(LocalDate date)
+    {
+        this.date = date;
+    }
     public void setDestination(String destination) {
         this.destination = destination;
     }
@@ -46,7 +52,7 @@ public class Flight {
     }
 
     //getters
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
