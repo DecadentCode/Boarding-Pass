@@ -54,8 +54,8 @@
       <recent name="com.boarding" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.boarding.Main">
-    <configuration name="com.boarding.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.boarding.Main" />
       <module name="Boarding-Pass" />
       <extension name="coverage">
@@ -78,12 +78,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.com.boarding.Main" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MainTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.boarding.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
       </list>
     </recent_temporary>
