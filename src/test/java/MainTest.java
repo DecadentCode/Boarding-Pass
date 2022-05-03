@@ -3,6 +3,7 @@ import com.boarding.Gender;
 import com.boarding.User;
 import org.junit.jupiter.api.Assertions;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.InputMismatchException;
 
@@ -45,11 +46,10 @@ class MainTest {
     }
     // Flight Class Tests
     @org.junit.jupiter.api.Test
-//    TODO: FIX THIS
     void getDate() {
         Flight flight = new Flight();
-//        flight.setDate("1/2/2022");
-        assertEquals("1/2/2022", flight.getDate(), "Flight date test");
+        flight.setDate(LocalDate.of(2022,1,2));
+        assertEquals(LocalDate.of(2022,1,2), flight.getDate(), "Flight date test");
     }
     @org.junit.jupiter.api.Test
     void getOrigin() {
@@ -66,13 +66,13 @@ class MainTest {
     @org.junit.jupiter.api.Test
     void getETA() {
         Flight flight = new Flight();
-        flight.setETA(LocalTime.of(12, 45)); //TODO: Convert this to use LocalTime
+        flight.setETA(LocalTime.of(12, 45));
         assertEquals(LocalTime.of(12, 45), flight.getETA(), "Flight ETA test");
     }
     @org.junit.jupiter.api.Test
     void getDT() {
         Flight flight = new Flight();
-        flight.setDT(LocalTime.of(12,45)); //TODO: Convert this to use LocalTime
+        flight.setDT(LocalTime.of(12,45));
         assertEquals(LocalTime.of(12,45), flight.getDT(), "Flight DT test");
     }
 
