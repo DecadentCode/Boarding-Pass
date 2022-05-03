@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Main extends Application {
     public static void main(String[] args) {
@@ -14,15 +15,15 @@ public class Main extends Application {
     }
 
     public static class Flights {
-        private ArrayList<Flight> flights = new ArrayList<>();
-        public ArrayList getFlights() {
+        private HashMap<Integer, Flight> flights = new HashMap<>();
+        public HashMap<Integer, Flight> getFlights() {
             return flights;
         }
-        public void setFlights(ArrayList flights) {
+        public void setFlights(HashMap<Integer, Flight> flights) {
             this.flights = flights;
         }
-        public void addFlight(Flight flight){
-            flights.add(flight);
+        public void addFlight(Integer flightNo, Flight flight){
+            flights.put(flightNo, flight);
         }
     }
 
