@@ -10,7 +10,9 @@ module com.boarding {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires com.fasterxml.jackson.databind;
+    requires jackson.datatype.jsr310;
 
-    opens com.boarding to javafx.fxml;
+    opens com.boarding to javafx.fxml,com.fasterxml.jackson.databind;
     exports com.boarding;
 }

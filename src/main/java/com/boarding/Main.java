@@ -8,12 +8,40 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.Month;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 public class Main extends Application{
     public static void main(String[] args) {
         launch(args);
+
+        /* Test code for serialization
+        Gender gender = Gender.Male;
+        LocalDate date = LocalDate.of(2022, Month.MAY, 4);
+        LocalTime ETA = LocalTime.of(17, 30);
+        LocalTime DT = LocalTime.of(12, 0);
+        User user = new User();
+        user.setName("Brett Hufnagle");
+        user.setGender(gender);
+        user.setEmail("schwifty42069@gmail.com");
+        user.setPhoneNumber("5551236789");
+        Flight flight = new Flight();
+        flight.setDate(date);
+        flight.setDestination("Los Angeles");
+        flight.setOrigin("New York");
+        flight.setETA(ETA);
+        flight.setDT(DT);
+        BoardingPass boardingPass = new BoardingPass();
+        boardingPass.setFlight(flight);
+        boardingPass.setUser(user);
+        boardingPass.serialize();
+
+         */
+
     }
 
     public static class Flights {
