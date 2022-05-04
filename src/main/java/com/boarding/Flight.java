@@ -34,6 +34,7 @@ public class Flight {
     {
         this.date = date;
     }
+
     public void setDestination(String destination) {
         this.destination = destination;
     }

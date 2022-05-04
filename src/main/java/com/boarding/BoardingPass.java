@@ -1,5 +1,6 @@
 package com.boarding;
 
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -7,12 +8,13 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-
+import java.util.UUID;
 
 public class BoardingPass {
 
     private Flight flight;
     private User user;
+    private final UUID BPNumber = UUID.randomUUID();
 
     public BoardingPass() {}
 
@@ -35,6 +37,11 @@ public class BoardingPass {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public UUID getUUID()
+    {
+       return BPNumber;
     }
 
     public void serialize() {

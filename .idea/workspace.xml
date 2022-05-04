@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f02010ca-fad0-4382-9d22-5ebfa36be43d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boarding/UIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/hello-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/BoardingPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/BoardingPass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Flight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
