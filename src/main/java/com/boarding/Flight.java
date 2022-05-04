@@ -71,6 +71,5 @@ public class Flight {
     public LocalTime getDT() {
         return DT;
     }
-
 }
 
