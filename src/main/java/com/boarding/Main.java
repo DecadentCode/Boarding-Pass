@@ -39,9 +39,37 @@ public class Main extends Application{
         boardingPass.setUser(user);
         boardingPass.serialize();
 
-
-
     }
+
+    /*
+
+    ! Fix this !
+    ____________
+
+    public static final String flightsFile = "src/main/resources/flights.ser";
+    private static Flights flights = new Flights();
+    public static Flights getFlights() {
+        return flights;
+    }
+    public static void setFlights(Flights flights) {
+        Main.flights = flights;
+    }
+    public static void main(String[] args) {
+        try {
+            FileInputStream fi = new FileInputStream(new File(flightsFile));
+            ObjectInputStream oi = new ObjectInputStream(fi);
+            flights = (Flights) oi.readObject();
+            oi.close();
+            fi.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("Error initializing stream");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    */
 
     public static class Flights {
         private HashMap<Integer, Flight> flights = new HashMap<>();
