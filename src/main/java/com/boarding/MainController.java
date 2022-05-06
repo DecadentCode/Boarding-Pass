@@ -3,9 +3,9 @@ package com.boarding;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class UIController {
+public class MainController {
     @FXML
-    private Label welcomeText;
+    private Label welcomeText, submittedText;
 
     @FXML
     protected void onHelloButtonClick() {
@@ -15,5 +15,10 @@ public class UIController {
     @FXML
     protected void onGoodbyeButtonClick() {
         welcomeText.setText("Goodbye!");
+    }
+
+    @FXML
+    protected void onSubmitButtonClick() {
+        submittedText.setText("Submitted! (not really)");
     }
 }
