@@ -1,5 +1,7 @@
 package com.boarding;
 
+import com.boarding.Location;
+import com.boarding.Locations;
 import java.io.Serializable;
 import java.time.LocalTime;
 import java.time.LocalDate;
@@ -72,6 +74,35 @@ public class Flight implements Serializable {
 
     public LocalTime getDT() {
         return DT;
+    }
+
+    // functions for ETA
+
+    //*IMPORTANT* DO NOT TOUCH CODE BELOW UNLESS YOU UNDERSTAND WHAT THE "Haversine Formula" IS AND HOW IT WORKS!!!!
+    public static double getDistance(double x1, double x2, double y1, double y2)
+    {
+        final int R = 3959; //earth's mean radius in miles
+        double latDistance = toRad(y1 - y2);
+        double longDistance = toRad(x1 -x2);
+        double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2) +
+                Math.cos(toRad(y1)) * Math.cos(toRad(y2)) *
+                        Math.sin(longDistance / 2) * Math.sin(longDistance / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        double distance = R * c;
+        return Math.round(distance);
+    }
+
+    private static double toRad(double value) {
+        return value * Math.PI / 180;
+    }
+
+    private static double getETA(Location one, Location two)
+    {
+        // todo: convert ETA to LocalTime object format
+        final double avgSpeed = 500;
+        double distance = getDistance(one.getLongitude(), two.getLongitude(), one.getLatitude(), two.getLatitude());
+        double ETA = (distance / avgSpeed) * 2;
+        return Math.round(ETA);
     }
 }
 
