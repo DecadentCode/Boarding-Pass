@@ -12,6 +12,11 @@ module com.boarding {
     requires com.almasb.fxgl.all;
     requires com.fasterxml.jackson.databind;
     requires jackson.datatype.jsr310;
+    requires org.apache.pdfbox;
+    requires kernel;
+    requires layout;
+    requires com.google.zxing;
+    requires java.desktop;
 
     opens com.boarding to javafx.fxml,com.fasterxml.jackson.databind;
     exports com.boarding;
