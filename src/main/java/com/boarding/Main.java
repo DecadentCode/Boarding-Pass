@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -65,8 +66,9 @@ public class Main extends Application{
     }
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 412, 732);
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("form.fxml"));
+        Scene scene = new Scene(loader.load(), 412, 900);
+//        stage.getIcons().add(new Image("/images/icon.png")); TODO FILE NOT FOUND?!?
         stage.setTitle("Air-Con Boarding");
         stage.setScene(scene);
         stage.show();
