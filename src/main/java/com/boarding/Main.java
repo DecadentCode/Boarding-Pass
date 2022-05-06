@@ -7,7 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Month;
@@ -16,10 +16,31 @@ import java.util.Date;
 import java.util.HashMap;
 
 public class Main extends Application{
+    public static final String flightsFile = "src/main/resources/flights.ser";
+    private static Flights flights = new Flights();
+    public static Flights getFlights() {
+        return flights;
+    }
+    public static void setFlights(Flights flights) {
+        Main.flights = flights;
+    }
     public static void main(String[] args) {
+        try {
+            FileInputStream fi = new FileInputStream(new File(flightsFile));
+            ObjectInputStream oi = new ObjectInputStream(fi);
+            flights = (Flights) oi.readObject();
+            oi.close();
+            fi.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("Error initializing stream");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         launch(args);
 
-        /* Test code for serialization
+        /*/ Test code for serialization
         Gender gender = Gender.Male;
         LocalDate date = LocalDate.of(2022, Month.MAY, 4);
         LocalTime ETA = LocalTime.of(17, 30);
@@ -39,24 +60,9 @@ public class Main extends Application{
         boardingPass.setFlight(flight);
         boardingPass.setUser(user);
         boardingPass.serialize();
-
-         */
+   */
 
     }
-
-    public static class Flights {
-        private HashMap<Integer, Flight> flights = new HashMap<>();
-        public HashMap<Integer, Flight> getFlights() {
-            return flights;
-        }
-        public void setFlights(HashMap<Integer, Flight> flights) {
-            this.flights = flights;
-        }
-        public void addFlight(Integer flightNo, Flight flight){
-            flights.put(flightNo, flight);
-        }
-    }
-
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));

@@ -1,9 +1,10 @@
 package com.boarding;
 
+import java.io.Serializable;
 import java.time.LocalTime;
 import java.time.LocalDate;
 
-public class Flight {
+public class Flight implements Serializable {
 
     // Date, Origin, Destination, Estimated time of arrival (ETA), Departure Time
     private LocalDate date;
@@ -34,6 +35,7 @@ public class Flight {
     {
         this.date = date;
     }
+
     public void setDestination(String destination) {
         this.destination = destination;
     }
