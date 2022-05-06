@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane fitToWidth="true" xmlns:fx="http://javafx.com/fxml" fx:controller="com.boarding.MainController">
+    <VBox alignment="CENTER" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <Label fx:id="welcomeText"/>
+        <Button text="Hello!" onAction="#onHelloButtonClick"/>
+        <Button text="Goodbye!" onAction="#onGoodbyeButtonClick"/>
+
+        <Label text="Enter Name:"/>
+        <TextField promptText="Enter Name" fx:id="nameField"/>
+        <Label text="Enter Email:"/>
+        <TextField promptText="Enter Email" fx:id="emailField"/>
+        <Label text="Enter Phone Number:"/>
+        <TextField promptText="Enter Phone Number" fx:id="phoneField"/>
+
+        <Label text="Enter Gender:"/>
+<!--        TODO TURN GENDER FIELD INTO A DROPDOWN-->
+        <TextField promptText="Enter Gender" fx:id="genderField"/>
+
+        <Label text="Enter Age:"/>
+        <TextField promptText="Enter Age" fx:id="ageField"/>
+        <Label text="Enter Date:"/>
+        <TextField promptText="Enter Date" fx:id="dateField"/>
+        <Label text="Enter Destination:"/>
+        <TextField promptText="Enter Destination" fx:id="desinationField"/>
+        <Label text="Enter Departure Time:"/>
+        <TextField promptText="Enter Departure Time" fx:id="departureField"/>
+
+        <Label fx:id="submittedText"/>
+        <Button text="Submit" onAction="#onSubmitButtonClick"/>
+    </VBox>
+</ScrollPane>
+
