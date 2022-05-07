@@ -3,6 +3,7 @@ package com.boarding;
 import java.io.Serializable;
 import java.time.LocalTime;
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class Flight implements Serializable {
 
@@ -72,6 +73,33 @@ public class Flight implements Serializable {
 
     public LocalTime getDT() {
         return DT;
+    }
+
+    public static double getDistance(double x1, double x2, double y1, double y2)
+    {
+        final int R = 3959; //earth's mean radius in miles
+        double latDistance = toRad(y1 - y2);
+        double longDistance = toRad(x1 -x2);
+        double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2) +
+                Math.cos(toRad(y1)) * Math.cos(toRad(y2)) *
+                        Math.sin(longDistance / 2) * Math.sin(longDistance / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        double distance = R * c;
+        return Math.round(distance);
+    }
+
+    private static double toRad(double value) {
+        return value * Math.PI / 180;
+    }
+
+    private static double getETA(Location one, Location two)
+    {
+        final double avgSpeed = 500;
+        double distance = getDistance(one.getLongitude(), two.getLongitude(), one.getLatitude(), two.getLatitude());
+        double ETA = (distance / avgSpeed) * 2;
+        String[] strArr = String.valueOf(ETA).replace(".", ",").split(" ");
+        System.out.println(Arrays.toString(strArr));
+        return Math.round(ETA);
     }
 }
 
