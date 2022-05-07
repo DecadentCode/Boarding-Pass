@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f02010ca-fad0-4382-9d22-5ebfa36be43d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/boarding/SubmittedController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/submitted.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/submitted.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/flights.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/flights.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,14 +43,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.33908045" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/boarding" />
@@ -115,5 +121,8 @@
       <updated>1651603457180</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
