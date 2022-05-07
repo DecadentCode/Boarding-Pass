@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import javax.swing.*;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -39,6 +40,7 @@ public class Main extends Application{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+        System.out.println(flights.getFlights().get(123));
         launch(args);
 
         /*/ Test code for serialization
@@ -64,11 +66,13 @@ public class Main extends Application{
    */
 
     }
+
+//    LOADS THE GUI
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("form.fxml"));
-        Scene scene = new Scene(loader.load(), 412, 900);
-//        stage.getIcons().add(new Image("/images/icon.png")); TODO FILE NOT FOUND?!?
+        Scene scene = new Scene(loader.load(), 412, 732);
+//        stage.getIcons().add(new Image("/images/plane.png")); TODO FILE NOT FOUND?!?
         stage.setTitle("Air-Con Boarding");
         stage.setScene(scene);
         stage.show();
