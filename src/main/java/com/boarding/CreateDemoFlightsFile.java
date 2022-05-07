@@ -9,7 +9,7 @@ public class CreateDemoFlightsFile {
         Flights flights = new Flights();
         Flight flight = new Flight(LocalDate.now(), "Cleveland Hopkins", "Miami International", LocalTime.now(), LocalTime.now());
         flights.addFlight(123,flight);
-        flight = new Flight(LocalDate.now(), "Cleveland Hopkins", "Miami International", LocalTime.now(), LocalTime.now());
+        flight = new Flight(LocalDate.now(), "Detroit Metro Airport", "Cleveland Hopkins", LocalTime.now(), LocalTime.now());
         flights.addFlight(124,flight);
         String file = "src/main/resources/flights.ser";
         // Write File
