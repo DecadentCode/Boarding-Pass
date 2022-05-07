@@ -46,7 +46,7 @@ public class Main extends Application{
         /*/ Test code for serialization
         Gender gender = Gender.Male;
         LocalDate date = LocalDate.of(2022, Month.MAY, 4);
-        LocalTime ETA = LocalTime.of(17, 30);
+        LocalTime ETA = flight.getETA();
         LocalTime DT = LocalTime.of(12, 0);
         User user = new User();
         user.setName("Brett Hufnagle");
@@ -55,7 +55,7 @@ public class Main extends Application{
         user.setPhoneNumber("5551236789");
         Flight flight = new Flight();
         flight.setDate(date);
-        flight.setDestination("Los Angeles");
+        flight.setDestination("California");
         flight.setOrigin("New York");
         flight.setETA(ETA);
         flight.setDT(DT);
