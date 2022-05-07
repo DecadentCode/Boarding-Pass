@@ -1,6 +1,7 @@
 package com.boarding;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -67,11 +68,14 @@ public class Flight implements Serializable {
         return destination;
     }
 
-    public LocalTime getETA() {
-        return ETA;
+    public LocalTime getETA()
+    {
+        double timeOfArrival = getETA(origin, destination);
+        return LocalTime.of(12, 30);
     }
 
-    public LocalTime getDT() {
+    public LocalTime getDT()
+    {
         return DT;
     }
 
@@ -93,8 +97,13 @@ public class Flight implements Serializable {
         return value * Math.PI / 180;
     }
 
-    private static double getETA(Location one, Location two)
+    //Takes an origin and destionation as a String and returns the ETA
+
+    private static double getETA( String origin, String destination)
     {
+        Locations dictionary = new Locations();
+        Location one = dictionary.getLocation(origin);
+        Location two = dictionary.getLocation(destination);
         final double avgSpeed = 500;
         double distance = getDistance(one.getLongitude(), two.getLongitude(), one.getLatitude(), two.getLatitude());
         double ETA = (distance / avgSpeed) * 2;
