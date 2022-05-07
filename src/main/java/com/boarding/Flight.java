@@ -75,6 +75,7 @@ public class Flight implements Serializable {
         return DT;
     }
 
+
     public static double getDistance(double x1, double x2, double y1, double y2)
     {
         final int R = 3959; //earth's mean radius in miles

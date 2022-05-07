@@ -53,6 +53,24 @@ public class Locations {
         LocationList.put("New Mexico",  NewMexico);
         LocationList.put("New York",  NewYork);
         LocationList.put("North Carolina",  NorthCarolina);
+        LocationList.put("North Dakota", NorthDakota);
+        LocationList.put("Ohio", Ohio);
+        LocationList.put("Oklahoma", Oklahoma);
+        LocationList.put("Oregon", Oregon);
+        LocationList.put("Pennsylvania", Pennsylvania);
+        LocationList.put("Rhode Island", RhodeIsland);
+        LocationList.put("South Carolina", SouthCarolina);
+        LocationList.put("South Dakota", SouthDakota);
+        LocationList.put("Tennessee", Tennessee);
+        LocationList.put("Texas", Texas);
+        LocationList.put("Utah", Utah);
+        LocationList.put("Vermont", Vermont);
+        LocationList.put("Virginia", Virginia);
+        LocationList.put("Washington", Washington);
+        LocationList.put("West Virginia", WestVirginia);
+        LocationList.put("Wisconsin", Wisconsin);
+        LocationList.put("Wyoming", Wyoming);
+
     }
 
     //parameterized constructor
