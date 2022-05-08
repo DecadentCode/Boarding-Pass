@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f02010ca-fad0-4382-9d22-5ebfa36be43d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/boarding/SubmittedController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/submitted.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/submitted.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/flights.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/flights.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +98,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CreateDemoFlightsFile" />
         <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="Application.CreateDemoFlightsFile" />
       </list>
     </recent_temporary>
   </component>

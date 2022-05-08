@@ -46,9 +46,6 @@ public class FormController implements Initializable {
         }else{ gender = ""; }
         String age = ageField.getText();
         String flight = flightsCombo.getValue();
-//        LocalDate date = dateField.getValue();
-//        String destination = destinationField.getText();
-//        String departure = departureField.getText();
 
         System.out.println("Name: "+name+" Email: "+email+" Phone: "+phone+" Gender: "+gender+" Age: "+age+" flight: "+flight);
 
