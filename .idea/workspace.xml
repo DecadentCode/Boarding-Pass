@@ -7,6 +7,7 @@
     <list default="true" id="f02010ca-fad0-4382-9d22-5ebfa36be43d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/flights.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/flights.ser" afterDir="false" />
@@ -102,8 +103,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CreateDemoFlightsFile" />
         <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="Application.CreateDemoFlightsFile" />
       </list>
     </recent_temporary>
   </component>
