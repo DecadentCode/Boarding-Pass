@@ -52,6 +52,13 @@ public class FormController implements Initializable {
         if(name.equals("") || email.equals("") || phone.equals("") || age.equals("") || gender.equals("") || flight==null){
             errorText.setText("Please fill in all the fields");
         }else{
+
+            // create boarding pass and serialize
+            User user = new User(name, email, phone, Gender.Male);
+            Flight flightobj = Main.getFlights().getFlights().get(Integer.valueOf(flight));
+            BoardingPass boardingPass = new BoardingPass(flightobj, user);
+            boardingPass.serialize();
+
             FXMLLoader loader = new FXMLLoader(Main.class.getResource("submitted.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(loader.load(), 412, 732);
@@ -62,8 +69,8 @@ public class FormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        for (Flight flight : Main.getFlights().getFlights().values()) {
-            flightsCombo.getItems().add(flight.getDestination());
+        for (Integer flightNo : Main.getFlights().getFlights().keySet()) {
+            flightsCombo.getItems().add(String.valueOf(flightNo));
         }
     }
 }
