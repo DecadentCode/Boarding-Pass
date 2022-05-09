@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f02010ca-fad0-4382-9d22-5ebfa36be43d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/FlightFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/FlightFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/UserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/UserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/flightForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/flightForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/userForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/userForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/flights.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/flights.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
