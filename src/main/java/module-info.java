@@ -20,4 +20,6 @@ module com.boarding {
 
     opens com.boarding to javafx.fxml,com.fasterxml.jackson.databind;
     exports com.boarding;
+    exports com.boarding.controllers;
+    opens com.boarding.controllers to com.fasterxml.jackson.databind, javafx.fxml;
 }

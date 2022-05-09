@@ -12,7 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane id="root" fitToHeight="true" fitToWidth="true" minWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.boarding.FormController">
+<ScrollPane fitToHeight="true" fitToWidth="true" minWidth="300.0"
+            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.boarding.controllers.UserFormController">
     <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: skyblue;">
         <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
@@ -42,16 +44,6 @@
         </ComboBox>
         <Label text="Enter Age:" />
         <TextField fx:id="ageField" promptText="Enter Age" />
-        <Label text="Choose Your Destination:" />
-        <ComboBox fx:id="flightsCombo" promptText="Choose Flight Number">
-        </ComboBox>
-        <!--        TODO: Enable flight selection criteria-->
-        <!--        <Label text="Enter Date:"/>-->
-        <!--        <DatePicker fx:id="dateField" />-->
-        <!--        <Label text="Enter Destination:"/>-->
-        <!--        <TextField promptText="Enter Destination" fx:id="destinationField"/>-->
-        <!--        <Label text="Enter Departure Time:"/>-->
-        <!--        <TextField promptText="Enter Departure Time" fx:id="departureField"/>-->
         <Text fx:id="errorText" />
         <Button onAction="#submitForm" text="Submit" />
     </VBox>

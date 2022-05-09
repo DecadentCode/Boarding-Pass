@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f02010ca-fad0-4382-9d22-5ebfa36be43d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/FlightFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/flightForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/CreateDemoFlightsFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/flights.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/flights.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/UserFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/SubmittedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/controllers/SubmittedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/boarding/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/boarding/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/userForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/boarding/submitted.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/boarding/submitted.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +72,7 @@
       <module name="Boarding-Pass" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.boarding.*" />
+          <option name="PATTERN" value="com.boarding.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,7 +85,7 @@
       <module name="Boarding-Pass" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.boarding.*" />
+          <option name="PATTERN" value="com.boarding.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +103,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CreateDemoFlightsFile" />
+      <item itemvalue="Application.com.boarding.CreateDemoFlightsFile" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MainTest" />
     </list>
@@ -104,7 +111,7 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="Application.CreateDemoFlightsFile" />
+        <item itemvalue="Application.com.boarding.CreateDemoFlightsFile" />
       </list>
     </recent_temporary>
   </component>

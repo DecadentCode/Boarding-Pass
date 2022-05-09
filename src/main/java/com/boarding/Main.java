@@ -70,7 +70,7 @@ public class Main extends Application{
 //    LOADS THE GUI
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("form.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("userForm.fxml"));
         Scene scene = new Scene(loader.load(), 412, 732);
 //        stage.getIcons().add(new Image("/images/plane.png")); TODO FILE NOT FOUND?!?
         stage.setTitle("Air-Con Boarding");

@@ -1,10 +1,10 @@
 package com.boarding;
 
 public class User {
-    private String name;
-    private String email;
-    private String phoneNumber;
-    private Gender gender;
+    private String name,
+            email,
+            phoneNumber,
+            gender;
 
     // Getters and Setters
     public String getName() {
@@ -28,17 +28,17 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
     // Constructor
     public User() {}
     // Parameterized constructor
-    public User(String name, String email, String phoneNumber, Gender gender ){
+    public User(String name, String email, String phoneNumber, String gender ){
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
