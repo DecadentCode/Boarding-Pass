@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<ScrollPane fitToHeight="true" fitToWidth="true" minWidth="300.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.boarding.controllers.FlightFormController">
+    <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: skyblue;">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Air-Con!">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+
+        <Label text="Available Departure Cities:" />
+        <ListView fx:id="departureList" prefHeight="100.0" />
+        <Label text="Available Arrival Cities:" />
+        <ListView fx:id="arrivalList" prefHeight="85.0" />
+        <Label text="Available Flights:" />
+        <ListView fx:id="flightList" prefHeight="60.0" />
+
+        <Button text="Submit"  onAction="#submitButtonPressed"/>
+        <Button text="Restart" onAction="#restart" />
+    </VBox>
+</ScrollPane>
