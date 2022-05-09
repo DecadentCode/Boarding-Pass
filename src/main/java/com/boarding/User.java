@@ -38,7 +38,7 @@ public class User {
     // Constructor
     public User() {}
     // Parameterized constructor
-    public User(String name, String email, String phoneNumber, String gender ){
+    public User(String name, String email, String phoneNumber, String gender){
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;

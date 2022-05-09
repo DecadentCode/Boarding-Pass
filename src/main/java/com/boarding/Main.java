@@ -40,7 +40,6 @@ public class Main extends Application{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println(flights.getFlights().get(123));
         launch(args);
 
         /*/ Test code for serialization

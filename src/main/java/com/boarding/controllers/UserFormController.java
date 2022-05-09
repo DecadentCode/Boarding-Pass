@@ -16,7 +16,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class UserFormController {
-
+    public User user;
     @FXML
     private TextField nameField, emailField, phoneField, ageField;
     @FXML
@@ -27,7 +27,7 @@ public class UserFormController {
 //    Handles the submit button
     @FXML
     protected void submitForm(ActionEvent event) throws Exception {
-        String name = nameField.getText().toLowerCase(),
+        String name = nameField.getText(),
                 email = emailField.getText().toLowerCase(),
                 phone = phoneField.getText().toLowerCase(),
                 age = ageField.getText(),
@@ -44,14 +44,13 @@ public class UserFormController {
         if(name.equals("") || email.equals("") || phone.equals("") || age.equals("") || gender.equals("")){
             errorText.setText("Please fill in all the fields");
         }else{
-            // create boarding pass and serialize
+//            Constructs the user
             User user = new User(name, email, phone, gender);
-//            Flight flightObj = Main.getFlights().getFlights().get(Integer.valueOf(flight));
-//            BoardingPass boardingPass = new BoardingPass(flightObj, user);
-//            boardingPass.serialize();
+
 //            Loads the Submitted scene
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("submitted.fxml"));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("flightForm.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setUserData(user); // Sets the user to the stage
             Scene scene = new Scene(loader.load(), 412, 732);
             stage.setScene(scene);
             stage.show();

@@ -12,7 +12,7 @@
             xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.boarding.controllers.FlightFormController">
-    <VBox prefHeight="100.0" prefWidth="100.0">
+    <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: skyblue;">
         <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
         </padding>
@@ -22,9 +22,14 @@
             </font>
         </Text>
 
-
+        <Label text="Available Departure Cities:" />
+        <ListView fx:id="departureList" prefHeight="100.0" />
+        <Label text="Available Arrival Cities:" />
+        <ListView fx:id="arrivalList" prefHeight="85.0" />
         <Label text="Available Flights:" />
-        <ComboBox fx:id="flightsCombo" promptText="Choose Flight Number">
-        </ComboBox>
+        <ListView fx:id="flightList" prefHeight="60.0" />
+
+        <Button text="Submit"  onAction="#submitButtonPressed"/>
+        <Button text="Restart" onAction="#restart" />
     </VBox>
 </ScrollPane>
